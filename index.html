@@ -521,7 +521,7 @@
                 font: 'promptTH' // Use promptTH as standard font
             },
             images: {
-                logo: 'https://lh3.googleusercontent.com/d/1aL9zhKAXPZBiZ4zAM8jWSPmiu5iaofVR',
+                logo: 'https://lh3.googleusercontent.com/d/1twlFf-4SwwNwAXJQQH1Rb9zSY7PSIosL',
                 certificateBackground: 'https://raw.githubusercontent.com/sanwithz/font/refs/heads/main/NPK%20TEMPLATE%202024.jpg',
                 signature: 'https://raw.githubusercontent.com/sanwithz/font/refs/heads/main/SIG.001.png',
             },
@@ -541,14 +541,19 @@
                 { text: 'ขอให้มีความสุขความเจริญและประสบความสำเร็จตลอดไป', alignment: 'center', fontSize: 16 },
                 // { image: 'signature', width: 100, alignment: 'center', margin: [0, 15, 0, 5] },
                         { image:'signature', width:180, alignment:'center' },
-        { text:'(นายกวีวัฒน์ ฤาชัยลาม )', fontSize:16, alignment:'center' },
+        { text:'(นายกวีวัฒน์ ฤาชัยลาม)', fontSize:16, alignment:'center' },
         { text:'(ผู้อำนวยการโรงเรียนหนองบัวพิทยาคาร)', fontSize:16, alignment:'center' },
                 { 
                     text: 'ให้ไว้ ณ วันที่ ' + new Date().toLocaleDateString('th-TH', { year: 'numeric', month: 'long', day: 'numeric' }), 
                     alignment: 'center', 
                     fontSize: 14, 
                     margin: [0, 0, 0, 0] 
-                }
+                },
+        {
+          text:'สมป. นภ. ' + currentUser.number + '/2569',
+          fontSize:16, alignment:'right', margin:[0,20,20,0],
+          absolutePosition:{ x:500, y:40 }
+        }
             ],
             styles: {
                 header: {
