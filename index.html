@@ -406,7 +406,7 @@
         if (!data.event || !data.points || !data.date) throw new Error();
         const today = new Date().toISOString().split('T')[0];
         if (data.date !== today) {
-          return Swal.fire({ icon:'warning',title:'คิวอาร์โค้ดหมดอายุ',text:'คุณสามารถรับคะแนนจากกิจกรรมนี้ได้วันละครั้งเท่านั้น' });
+          return Swal.fire({ icon:'warning',title:'คิวอาร์โค้ดไม่ถูกต้อง',text:'คุณสามารถรับคะแนนจากกิจกรรมนี้ได้วันในวันที่ 24 กค. 69 และสแกนได้ครั้งเดียวเท่านั้น' });
         }
         if (this.userHistory.some(s => s.event === data.event && s.date === data.date)) {
           return Swal.fire({ icon:'info',title:'รับคะแนนไปแล้ว',text:'ท่านได้รับแต้มจากบูทนี้แล้ว ไม่สามารถรับคะแนนซ้ำได้' });
